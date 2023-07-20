@@ -17,7 +17,7 @@ async function main() {
   console.log(`starting crawl of ${baseURL}`);
   const pages = await crawlPage(baseURL, baseURL, {});
 
-  printReport(pages);
+  printReport(pages, baseURL);
 }
 
 main();
